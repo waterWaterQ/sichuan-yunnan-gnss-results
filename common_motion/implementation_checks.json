@@ -1,0 +1,7 @@
+{
+  "full_ev_max_abs_difference": 2.067790383364354e-15,
+  "full_pt_max_abs_difference": 1.5265566588595902e-16,
+  "flat_euclidean_constant_shift_max_abs": 7.105427357601002e-15,
+  "implementation_space_euler_ev_max_abs": 9.280770596475918e-17,
+  "physical_euler_design_cross_product_max_abs": 1.7763568394002505e-15
+}

@@ -1,0 +1,50 @@
+{
+  "reference_boundary_count": 12,
+  "valid_boundary_ids": [
+    2,
+    6,
+    7,
+    9,
+    10
+  ],
+  "expected_valid_boundary_ids": [
+    2,
+    6,
+    7,
+    9,
+    10
+  ],
+  "checks": [
+    {
+      "boundary_id": 2,
+      "passed": true,
+      "expected_delta": -0.1467040521511151,
+      "observed_delta": -0.14670405215111512
+    },
+    {
+      "boundary_id": 6,
+      "passed": true,
+      "expected_delta": 0.6015410536624385,
+      "observed_delta": 0.6015410536624385
+    },
+    {
+      "boundary_id": 7,
+      "passed": true,
+      "expected_delta": 1.2878419534750998,
+      "observed_delta": 1.2878419534751795
+    },
+    {
+      "boundary_id": 9,
+      "passed": true,
+      "expected_delta": -0.4388492538486918,
+      "observed_delta": -0.4388492538486918
+    },
+    {
+      "boundary_id": 10,
+      "passed": true,
+      "expected_delta": 1.6156369780095117,
+      "observed_delta": 1.6156369780095117
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "station_count": 455,
+  "reference_configuration": {
+    "BOUNDARY_SMOOTHING": 0.25,
+    "BOUNDARY_POINTS": 200,
+    "MIN_BOUNDARY_EDGES": 1,
+    "BOUNDARY_HULL_BUFFER_KM": 20.0,
+    "PROFILE_VELOCITY_COMPONENT": "normal",
+    "PROFILE_CANDIDATE_STEP": 3,
+    "PROFILE_HALF_LENGTH_KM": 120.0,
+    "PROFILE_HALF_WIDTH_KM": 25.0,
+    "PROFILE_MIN_EACH_SIDE": 6,
+    "PROFILE_JUMP_WEIGHT": 0.0,
+    "PROFILE_BALANCE_WEIGHT": 50.0,
+    "PROFILE_PURITY_WEIGHT": 30.0
+  },
+  "origin_longitude": 101.58392747252748,
+  "origin_latitude": 26.997103296703298,
+  "reference_reproduction_passed": true,
+  "case_metadata": {},
+  "notes": [
+    "Geometric matching is a full-sample frame comparison, not a sampling reproduction probability.",
+    "Holm tests are conditional on selected labels, boundary, window, and original station covariances.",
+    "No simple sign flip is applied to delta: normal reversal reverses both x and projected y.",
+    "Fixed-window common-translation invariance must not be described as independent robustness evidence."
+  ]
+}

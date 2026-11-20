@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "result_rows": 1200,
+  "zero_noise_rows": 12,
+  "scenario_method_groups": 12,
+  "per_group_repetitions": 100,
+  "seed_archive_exactly_regenerated": true,
+  "zero_noise_step_perfect_ARI_all_methods": true,
+  "max_summary_error": 1.1102230246251565e-16,
+  "warning_count": 0
+}

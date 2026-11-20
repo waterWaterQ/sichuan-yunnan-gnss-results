@@ -1,0 +1,38 @@
+{
+  "status": "Frozen before synthetic calculations",
+  "seed": 2026110701,
+  "replicates_per_scenario": 100,
+  "amplitudes_mm_yr": [
+    2.0,
+    4.0
+  ],
+  "backgrounds": {
+    "smooth_gradient": "f(x)=A*x/200 with x in km; A is the velocity change over 200km",
+    "arctan_transition": "f(x)=A/pi*atan(x/20); A is the asymptotic far-field difference, w=20km",
+    "step": "f(x)=A*(I[x>=0]-0.5); A is the discontinuity"
+  },
+  "velocity_EN": "v_i=common_EN+normal_EN*f(x_i)+epsilon_i in physical mm/yr",
+  "common_EN_mm_yr": [
+    7.562565040475302,
+    -7.121023018233575
+  ],
+  "normal_and_center": "Full-sample unit-east Boundary 3 main window",
+  "positions": "Identical actual 455 retained GNSS sites",
+  "noise": "Independent stations, within-site bivariate Gaussian with supplied dVe,dVn,Cen; one archived 100x455x2 standard-normal array shared by all scenarios and both methods",
+  "methods": [
+    "unit_EVPT",
+    "velocity_Euclidean"
+  ],
+  "clustering": "Average linkage, choose K from2..15 by maximum precomputed-distance silhouette, no tuning by synthetic truth",
+  "noiseless_reference": "One zero-noise computation per scenario and method, stored separately",
+  "ARI": "Compare selected labels to x<0 versus x>=0 at all455 sites; descriptive reference for smooth/arctan, known sides for step",
+  "boundary_geometry": "Reuse pipeline Voronoi boundaries and smoothing. Clip each candidate to fixed normal half-length120km and tangent half-width25km. Compare x=0 reference segment of length50km to each connected clipped line, using101 equally spaced arc points and bidirectional >=50percent coverage within10/20/40km. Also report median distance from reference segment to the union of clipped lines. No valid local line means no match and missing distance.",
+  "interpretation": "Smooth-gradient cluster boundaries are not labelled false positives. Geometrical matching measures proximity to the prescribed center and does not test a velocity jump.",
+  "limits": [
+    "Common local EN field is a convention and does not represent an exact physical Euler rotation field.",
+    "One prescribed normal direction and simple scalar profiles provide a limited synthetic benchmark.",
+    "Amplitudes have profile-specific definitions, so compare methods within each scenario.",
+    "Only supplied within-site covariance is simulated; no spatially correlated or reference-frame errors.",
+    "K search excludes1, so every realization is divided into at least2 groups."
+  ]
+}
